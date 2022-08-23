@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+	width: 1px;
+	background-color: hsl(220 20% 14%);
+}
+
+body {
+	height: 2000px;
+	padding: 0 2rem;
+	font-family: 'Poppins', sans-serif;
+	color: hsl(220 20% 98%);
+	background-image: linear-gradient(
+		to right top,
+		hsl(220 20% 14%),
+		hsl(220 20% 18%)
+	);
+	background-attachment: fixed;
+}
+
+h1 {
+	max-width: 800px;
+	margin-bottom: 4rem;
+	font-size: 3rem;
+	font-weight: 900;
+}
+
+input,
+button {
+	padding: 0.6rem 1rem;
+	font: inherit;
+	border-radius: 20px;
+	border: none;
+	box-shadow: 0 0 10px hsl(0 0% 0% / 10%);
+}
+
+input {
+	max-width: 280px;
+	color: hsl(220 20% 98%);
+	background-color: hsl(220 20% 24%);
+}
+
+button {
+	display: grid;
+	place-content: center;
+	cursor: pointer;
+}
+
+details > summary {
+	list-style-type: '👉️ ';
+}
+
+details[open] > summary {
+	list-style-type: '👇️ ';
+}
+
+details > summary {
+	font-weight: 700;
+	font-size: 2rem;
+	margin-bottom: 3rem;
+}
+
+hr {
+	margin-bottom: 3rem;
+	border: 1px solid hsl(220 20% 20%);
+}
+
+.counter {
+	display: flex;
+	align-items: center;
+	gap: 0.4rem;
+}
+
+.counter p {
+	width: 2rem;
+	text-align: center;
+}
+
+.mousearea {
+	height: 200px;
+	background-color: hsl(220 20% 24%);
+	border-radius: 20px;
+	box-shadow: 0 0 10px hsl(0 0% 0% / 10%);
+}
+
+.notifications {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 0.4rem;
+	margin-top: 1rem;
+	z-index: 1;
+}
+
+.notification {
+	width: 280px;
+	display: flex;
+	gap: 1rem;
+	margin-inline: auto;
+	padding: 1rem;
+	background-color: hsl(220 20% 24%);
+	border: 1px solid hsl(220 20% 28%);
+	border-radius: 20px;
+	box-shadow: 0 0 10px hsl(0 0% 0% / 10%);
+}
+
+canvas {
+	background-color: hsl(220 20% 24%);
+	border-radius: 20px;
+}
+
+.production {
+	display: flex;
+	gap: 0.4rem;
+}
+
+.produce {
+	margin-top: 2rem;
+	padding: 1rem;
+	font-size: 3rem;
+	background-color: hsl(220 20% 24%);
+	border-radius: 20px;
+}
