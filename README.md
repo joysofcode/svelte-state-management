@@ -17,5 +17,5 @@ pnpm i && pnpm run dev
 ## 🛠️ Build
 
 ```bash
-pnpm run build & pnpm run preview
+pnpm run build && pnpm run preview
 ```
